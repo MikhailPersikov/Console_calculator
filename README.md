@@ -1,1 +1,2 @@
-# Console_calculator
+Simple console calculator. 
+
