@@ -13,13 +13,13 @@ function culc(operators,numb1,numb2) {
         return numb1 % numb2; 
     } else if (operators === 'exp') {
         return numb1 ** numb2; 
-    } else if (operators ==  String || Number || NaN) {
-        return "unknow operators"
+    } else if (operators == Number ||  operators ==  NaN) {
+        return "unknow operation"
     } else 'Error'
 } 
 
-console.log(culc('sad',1,2)) //unknow operators
-console.log(culc(1,1,2)) //unknow operators
+console.log(culc('sad',1,2)) //unknow operation
+console.log(culc(1,1,2)) //unknow operation
 console.log(culc('sum')) //Error
 console.log(culc('sum',1)) //Error
 console.log(culc('sum',"asd")) //Error
